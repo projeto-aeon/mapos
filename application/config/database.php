@@ -6,10 +6,10 @@ include '../secret.php';
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = $_ENV['DB_HOSTNAME']; 
-$db['default']['username'] = $_ENV['DB_USERNAME'];
-$db['default']['password'] = $_ENV['DB_PASSWORD'];
-$db['default']['database'] = $_ENV['DB_DATABASE'];
+$db['default']['hostname'] = $hostname; 
+$db['default']['username'] = $username;
+$db['default']['password'] = $password;
+$db['default']['database'] = $database;
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
